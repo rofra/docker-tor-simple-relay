@@ -56,11 +56,15 @@ docker-compose up -d
 Wait 20 minutes, and check if your node is in the list of nodes in https://torstatus.blutmagie.de/.
 
 ## Versioning 
-### On Github
-Full sources are on [GitHub Repository](https://github.com/your/project/tags). 
+### On Git
+We use **Github** for source versionning:
+- [Sources](https://github.com/rofra/docker-tor-simple-relay/)
+- [Releases](https://github.com/rofra/docker-tor-simple-relay/releases)
 
 ### On Docker Hub
-We use [Docker HUB](https://hub.docker.com/) for versioning. For the versions available, see the [Docker Hub Version repository](https://github.com/your/project/tags). 
+We use **Docker Hub** for image versioning and auto-building docker images:
+- [Project](https://hub.docker.com/r/fedorage/docker-tor-simple-relay)
+- [Releases](https://hub.docker.com/r/fedorage/docker-tor-simple-relay/tags)
 
 ## Authors
 * **Rodolphe Franceschi** - *Initial work* - ([github](https://github.com/rofra) / [linkedin](https://www.linkedin.com/in/rodolphe-franceschi-2a47b636/))
