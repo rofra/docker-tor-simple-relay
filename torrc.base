@@ -1,0 +1,23 @@
+RunAsDaemon 0
+BridgeRelay 0
+
+# Tor port
+ORPort 443 NoListen
+ORPort 0.0.0.0:9001 NoAdvertise
+
+# Directory Port
+DirPort 80 NoListen
+DirPort 0.0.0.0:9030 NoAdvertise
+
+# obfs4 Configuration
+ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+ServerTransportListenAddr obfs4 0.0.0.0:46396
+
+# Local communication port between Tor and obfs4.  Always set this to "auto".
+# "Ext" means "extended", not "external".  Don't try to set a specific port
+# number, nor listen on 0.0.0.0.
+ExtORPort auto
+
+# System directory
+DataDirectory /var/lib/
+
