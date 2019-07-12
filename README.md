@@ -26,8 +26,8 @@ services:
       - "46396:46396"
     environment:
       TOR_EXTRA_CONF: |
-        Nickname RofraTorSimpleRelay
-        ContactInfo RofraTorSimpleRelay@hack.me
+        Nickname MyTorSimpleRelay
+        ContactInfo tor@hack.me
 ```
 
 ### Relay Node but not exit node example
@@ -43,7 +43,7 @@ services:
       - "46396:46396"
     environment:
       TOR_EXTRA_CONF: |
-        Nickname TorSimpleRelay
+        Nickname MyTorSimpleRelay
         ContactInfo tor@hack.me
         Exitpolicy reject *:* # Exit node not allowed
 ```
