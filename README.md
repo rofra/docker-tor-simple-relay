@@ -4,14 +4,18 @@ This is a simple docker container to run the most updated version of tor on your
 Now, you cannot say anymore: "*I cannot create my node, it's too complicated*'.
 
 ## Getting Started
+
+### About tor
+Find more information about tor on the officiel tor website https://www.torproject.org/.
+
 ### Prerequisites
 To run this container, you will need [docker](https://www.docker.com/) and *docker-compose* (optionnal).
 
-## About tor
-Find more information about tor on the officiel tor website https://www.torproject.org/.
-
-## How to use
-This is a simple container, lightweight, based on debian stretch running with a custom user "tor" (not root).
+### Reasons why you should use this container
+- Onion Router Port: 443
+- Directory Server Port: 80
+- Docker container running on separate user (tor)
+- Compiled from [official source code](https://www.torproject.org/download/tor/) with official, **non altered code** (see [Dockerfile](https://hub.docker.com/r/fedorage/tor-simple-relay/dockerfile))
 
 ### Relay Node example
 **docker-compose.yml**
@@ -53,7 +57,7 @@ services:
 docker-compose up -d
 ```
 
-Wait 20 minutes, and check if your node is in the list of nodes in https://torstatus.blutmagie.de/.
+Then wait for 20 minutes, and check if your node is in the list of nodes in https://torstatus.blutmagie.de/.
 
 ## Versioning 
 ### On Git
@@ -70,5 +74,13 @@ We use **Docker Hub** for image versioning and auto-building docker images:
 * **Rodolphe Franceschi** - *Initial work* - ([github](https://github.com/rofra) / [linkedin](https://www.linkedin.com/in/rodolphe-franceschi-2a47b636/))
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+ 
+The MIT License (MIT)
 
+Copyright (c) 2015 Chris Kibble
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
