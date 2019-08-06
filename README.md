@@ -67,8 +67,8 @@ We use **Github** for source versionning:
 
 ### On Docker Hub
 We use **Docker Hub** for image versioning and auto-building docker images:
-- [Project](https://hub.docker.com/r/fedorage/docker-tor-simple-relay)
-- [Releases](https://hub.docker.com/r/fedorage/docker-tor-simple-relay/tags)
+- [Project](https://hub.docker.com/r/fedorage/tor-simple-relay)
+- [Releases](https://hub.docker.com/r/fedorage/tor-simple-relay/tags)
 
 ## Authors
 * **Rodolphe Franceschi** - *Initial work* - ([github](https://github.com/rofra) / [linkedin](https://www.linkedin.com/in/rodolphe-franceschi-2a47b636/))
