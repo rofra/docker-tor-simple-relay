@@ -6,7 +6,7 @@ LABEL maintainer="Rodolphe Franceschi <rodolphe.franceschi@gmail.com>"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ENV VERSION "0.4.0.5"
+ENV VERSION "0.4.1.5"
 ENV BASENAME "tor-${VERSION}"
 ENV ARCHIVE_NAME "${BASENAME}.tar.gz"
 ENV SIGNATURE_NAME "${ARCHIVE_NAME}.asc"
@@ -47,6 +47,7 @@ RUN set -ex \
 
 # Cleanup
 RUN rm -fr /tmp/tor \
+    && rm -fr /root/.gnupg \
     && apt-get remove -y --purge ${DEPENDENCY_LIST}
 
 # Install custom tor proxies
