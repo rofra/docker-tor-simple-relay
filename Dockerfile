@@ -6,7 +6,7 @@ LABEL maintainer="Rodolphe Franceschi <rodolphe.franceschi@gmail.com>"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-ENV VERSION "0.4.3.5"
+ENV VERSION "0.4.4.5"
 ENV BASENAME "tor-${VERSION}"
 ENV ARCHIVE_NAME "${BASENAME}.tar.gz"
 ENV SIGNATURE_NAME "${ARCHIVE_NAME}.asc"
